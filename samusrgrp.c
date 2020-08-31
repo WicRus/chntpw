@@ -214,7 +214,6 @@ int cmd_usrgrp_sid(char * parsing_sid, char *grp, int what, int human)
         case 2: ret = sam_remove_sid_from_grp( hive[H_SAM], sid, numgrp); break;
     }
 
-    free(sid);
     return ret;
 }
 
